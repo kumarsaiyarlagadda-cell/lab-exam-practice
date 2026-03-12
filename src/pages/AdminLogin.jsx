@@ -18,10 +18,11 @@ function AdminLogin(){
 
   return(
     <div style={{display:"flex",justifyContent:"center",marginTop:"80px"}}>
-      <form onSubmit={handleLogin} style={{border:"2px solid black",padding:"30px",width:"250px",textAlign:"center",borderRadius:"8px"}}>
+      <form onSubmit={handleLogin} style={{border:"2px solid black",padding:"30px",width:"250px",textAlign:"center",borderRadius:"8px",backgroundColor:"#f3f4f6"}}>
         <h2>Admin Login</h2>
-        <input type="text"placeholder="Username"onChange={(e)=>setUsername(e.target.value)}style={{width:"100%",marginTop:"15px",padding:"6px",border:"1px solid black"}}/>
-        <input type="password"placeholder="Password"onChange={(e)=>setPassword(e.target.value)}style={{width:"100%",marginTop:"15px",padding:"6px",border:"1px solid black"}}/>
+        <hr/>
+        <input type="text"placeholder="Username"onChange={(e)=>setUsername(e.target.value)}style={{width:"100%",marginTop:"15px",padding:"6px",border:"1px solid black",boxSizing:"border-box",height:"32px"}}/>
+        <input type="password"placeholder="Password"onChange={(e)=>setPassword(e.target.value)}style={{width:"100%",marginTop:"15px",padding:"6px",border:"1px solid black",boxSizing:"border-box",height:"32px"}}/>
         <button type="submit"style={{marginTop:"20px",backgroundColor:"#2563eb",color:"white",padding:"6px 15px",border:"1px solid black",borderRadius:"3px"}}>Login</button>
       </form>
     </div>
