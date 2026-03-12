@@ -1,0 +1,39 @@
+.nav{
+  background:black;
+  padding:15px;
+  display:flex;
+  justify-content: center;
+}
+
+.links{
+  display:flex;
+  gap:400px;
+}
+
+.links a{
+  color:white;
+  text-decoration:none;
+}
+
+.login{
+  position:relative;
+  color:white;
+  cursor:pointer;
+}
+
+.menu{
+  position:absolute;
+  top:25px;
+  background:white;
+  list-style:none;
+  padding:5px;
+}
+
+.menu li{
+  padding:5px;
+}
+
+.menu a{
+  color:black;
+  text-decoration:none;
+}
